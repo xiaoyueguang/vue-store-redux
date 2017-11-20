@@ -1,5 +1,3 @@
-import default from "vue";
-
 function  install (Vue, Store) {
   Vue.prototype.$$store = Store
   Vue.prototype.$dispatch = Store.dispatch
