@@ -1,0 +1,12 @@
+{
+  "name": "vue-store-redux",
+  "version": "1.0.0",
+  "description": "vue",
+  "main": "index.js",
+  "author": "Ray",
+  "license": "MIT",
+  "dependencies": {
+    "redux": "^3.7.2",
+    "vue": "^2.5.6"
+  }
+}
