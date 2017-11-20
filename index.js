@@ -9,7 +9,7 @@ function  install (Vue, Store) {
       }
     }
   })
-  Vue.prototype.$store = vm
+  Vue.prototype.$state = vm
 
   Store.subscribe(() => {
     const state = Store.getState()
