@@ -1,12 +1,22 @@
 {
   "name": "vue-store-redux",
-  "version": "1.0.2",
+  "version": "1.1.0",
   "description": "vue",
   "main": "index.js",
   "author": "Ray",
   "license": "MIT",
+  "scripts": {
+    "dev": "webpack -w"
+  },
+  "file": [
+    "index.js"
+  ],
   "dependencies": {
     "redux": "^3.7.2",
     "vue": "^2.5.6"
+  },
+  "devDependencies": {
+    "immutable": "^3.8.2",
+    "webpack": "^3.8.1"
   }
 }

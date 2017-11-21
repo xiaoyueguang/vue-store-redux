@@ -1,7 +1,4 @@
 function  install (Vue, Store) {
-  Vue.prototype.$$store = Store
-  Vue.prototype.$dispatch = Store.dispatch
-
   const vm = new Vue({
     data () {
       return {
@@ -9,7 +6,10 @@ function  install (Vue, Store) {
       }
     }
   })
-  Vue.prototype.$state = vm
+  Vue.prototype.$state = vm.state
+  window.vvv = vm
+  Vue.prototype.$redux = Store
+  Vue.prototype.$dispatch = Store.dispatch
 
   Store.subscribe(() => {
     const state = Store.getState()
