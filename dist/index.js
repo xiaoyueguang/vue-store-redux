@@ -17279,7 +17279,6 @@ function  install (Vue, Store) {
     }
   })
   Vue.prototype.$state = vm.state
-  window.vvv = vm
   Vue.prototype.$redux = Store
   Vue.prototype.$dispatch = Store.dispatch
 
